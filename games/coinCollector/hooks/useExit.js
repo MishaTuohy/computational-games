@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import { removeParticipant, updateGameState } from '@/services/games/GameService';
-import useGenericExitGame from '../useGenericExitGame';
+import useGenericExitGame from '@/hooks/useGenericExitGame';
 
 export default function useExit(gameID, user, gameState, logOut) {
     const updateGame = useCallback(async (gameID, playerId) => {

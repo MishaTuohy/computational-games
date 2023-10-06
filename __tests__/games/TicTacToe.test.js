@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import { TicTacToe } from '@/games/TicTacToe';
+import { TicTacToe } from '@/games/ticTacToe/TicTacToe';
 import { useAuth } from '@/services/firebase/auth/AuthProvider';
-import { useBehaviour } from '@/hooks/games/tictactoe/useBehaviour';
+import { useBehaviour } from '@/games/ticTacToe/hooks/useBehaviour';
 
 jest.mock('@/services/firebase/auth/AuthProvider', () => ({
     useAuth: jest.fn(),

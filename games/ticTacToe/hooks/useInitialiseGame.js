@@ -1,6 +1,6 @@
 import { useEffect, useCallback } from 'react';
 import produce from 'immer';
-import { useGenericInitialiseGame } from '../useGenericInitialiseGame';
+import { useGenericInitialiseGame } from '@/hooks/useGenericInitialiseGame';
 
 export function useInitialiseGame(gameState, gameSession, gameID, setGameState, user) {
     const { initialise, isInitialised } = useGenericInitialiseGame();

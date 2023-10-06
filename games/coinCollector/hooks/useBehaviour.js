@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import useGameUpdate from '../useGameUpdate';
+import useGameUpdate from '@/hooks/useGameUpdate';
 import useChangeColor from './useChangeColor';
 import useChangeName from './useChangeName';
 import useCoinSpawner from './useCoinSpawner';

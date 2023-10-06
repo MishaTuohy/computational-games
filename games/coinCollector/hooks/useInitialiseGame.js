@@ -1,5 +1,5 @@
 import { useCallback, useEffect } from 'react';
-import { useGenericInitialiseGame } from '../useGenericInitialiseGame';
+import { useGenericInitialiseGame } from '@/hooks/useGenericInitialiseGame';
 import { getRandomSafeSpot } from '@/utils/coincollector/MapUtils';
 import { createName, playerColors, randomFromArray } from '@/utils/coincollector/PlayerUtils';
 import produce from 'immer';

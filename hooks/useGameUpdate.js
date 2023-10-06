@@ -1,4 +1,4 @@
-import useListenToDoc from '@/hooks/services/firebase/useListenToDoc';
+import useListenToDoc from '@/hooks/useListenToDoc';
 import { useState, useEffect } from 'react';
 import { isEqual } from 'lodash';
 

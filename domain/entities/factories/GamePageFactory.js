@@ -1,6 +1,6 @@
 import errorHandler from '@/helpers/errorHandler';
-import { CoinCollector } from '@/games/CoinCollector';
-import { TicTacToe } from '@/games/TicTacToe';
+import { CoinCollector } from '@/games/coinCollector/CoinCollector';
+import { TicTacToe } from '@/games/ticTacToe/TicTacToe';
 
 export function createGamePage(type, id) {
     if(!type || !id) {

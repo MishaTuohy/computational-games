@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { updateGameState, removeParticipant } from '@/services/games/GameService';
 import produce from 'immer';
-import useGenericExitGame from '../useGenericExitGame';
+import useGenericExitGame from '@/hooks/useGenericExitGame';
 
 export function useExit(gameID, gameState, setGameState, user, logOut, setWins) {
 

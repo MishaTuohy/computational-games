@@ -1,4 +1,4 @@
-import useGameUpdate from '../useGameUpdate';
+import useGameUpdate from '@/hooks/useGameUpdate';
 import { useExit } from './useExit';
 import { useInitialiseGame } from './useInitialiseGame';
 import { useMark } from './useMark';

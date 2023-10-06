@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import useDebounce from '@/hooks/games/useDebounce';
+import useDebounce from '@/hooks/useDebounce';
 import { act } from 'react-dom/test-utils';
 
 

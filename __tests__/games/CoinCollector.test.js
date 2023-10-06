@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { useAuth } from '@/services/firebase/auth/AuthProvider';
-import useBehaviour from '@/hooks/games/coincollector/useBehaviour';
-import { CoinCollector } from '@/games/CoinCollector';
+import useBehaviour from '@/games/coinCollector/hooks/useBehaviour';
+import { CoinCollector } from '@/games/coinCollector/CoinCollector';
 
 jest.mock('@/services/firebase/auth/AuthProvider', () => ({
     useAuth: jest.fn(),

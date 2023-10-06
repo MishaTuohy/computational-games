@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import produce from 'immer';
 import { updateGameState } from '@/services/games/GameService';
 import errorHandler from '@/helpers/errorHandler';
-import useDebounce from '../useDebounce';
+import useDebounce from '@/hooks/useDebounce';
 
 export default function useUpdatePlayerState(gameID, playerState, setGameState) {
     const debouncedPlayerState = useDebounce(playerState, 150);

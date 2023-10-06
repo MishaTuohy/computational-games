@@ -2,7 +2,7 @@ import { useAuth } from '@/services/firebase/auth/AuthProvider';
 import styles from '@/styles/games/TicTacToe.module.css';
 import InviteModal from '@/components/modals/InviteModal';
 import PlayerScore from '@/components/games/tictactoe/PlayerScore';
-import { useBehaviour } from '../hooks/games/tictactoe/useBehaviour';
+import { useBehaviour } from './hooks/useBehaviour';
 import { memo } from 'react';
 
 export const TicTacToe = memo(({ gameID }) => {

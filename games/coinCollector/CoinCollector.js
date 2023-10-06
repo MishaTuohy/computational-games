@@ -1,7 +1,7 @@
 import CharacterElement from '@/components/games/coincollector/CharacterElement';
 import CoinElement from '@/components/games/coincollector/CoinElement';
 import InviteModal from '@/components/modals/InviteModal';
-import useBehaviour from '@/hooks/games/coincollector/useBehaviour';
+import useBehaviour from '@/games/coinCollector/hooks/useBehaviour';
 import { useAuth } from '@/services/firebase/auth/AuthProvider';
 import styles from '@/styles/games/CoinCollector.module.css';
 

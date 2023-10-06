@@ -1,5 +1,5 @@
 import { render, waitFor } from '@testing-library/react';
-import useListenToDoc from '@/hooks/services/firebase/useListenToDoc';
+import useListenToDoc from '@/hooks/useListenToDoc';
 import useGameUpdate from '@/hooks/games/useGameUpdate';
 
 jest.mock('firebase/auth', () => ({ getAuth: jest.fn(), }));
