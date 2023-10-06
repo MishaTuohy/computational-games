@@ -30,12 +30,6 @@ jobs:
     - name: Build
       run: npm run build
 
-    - name: Upload node_modules as Artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: node_modules
-        path: ./node_modules/
-
   lint-hosting:
     needs: [build-hosting]
     runs-on: ubuntu-latest
@@ -62,7 +56,7 @@ jobs:
 
   deploy-functions:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' # replace with your default branch
+    if: github.ref == 'refs/heads/main'
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2
@@ -83,7 +77,7 @@ jobs:
   deploy-hosting:
     needs: [test-hosting]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' # replace with your default branch
+    if: github.ref == 'refs/heads/main'
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2
