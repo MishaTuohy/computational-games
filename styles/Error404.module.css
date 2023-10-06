@@ -1,0 +1,20 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.errorCode {
+    font-size: 6rem;
+    font-weight: bold;
+}
+  
+.errorMessage {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+  
+.errorDescription {
+    font-size: 1.25rem;
+}

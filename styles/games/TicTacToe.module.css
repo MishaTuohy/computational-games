@@ -1,0 +1,76 @@
+/* Default styles */
+.mapContainer {
+  position: relative;
+  transform: scale(1.5);
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .mapContainer {
+    transform: scale(1.2);
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+  .mapContainer {
+    transform: scale(0.8);
+  }
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+}
+
+.game_board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+}
+
+.square {
+  background-color: #eee;
+  border-radius: 8px;
+  box-shadow: 0px 4px #ddd;
+  text-align: center;
+  font-size: 64px;
+  line-height: 100px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: #dbf3ff;
+}
+
+.winner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaveButton {
+  position: absolute;
+  width: 28%;
+  left: 0%;
+}
+
+.restartButton {
+  position: absolute;
+  width: 28%;
+  left: 36%;
+  right: 36%;
+}
+
+.inviteButton {
+  position: absolute;
+  width: 28%;
+  right: 0%;
+}

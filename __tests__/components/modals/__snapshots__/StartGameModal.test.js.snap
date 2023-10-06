@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StartGameModal hides the modal when the close button is clicked 1`] = `
+[
+  <div
+    className="btn btn-warning"
+    data-testid="button"
+    onClick={[Function]}
+  >
+    Start Game
+  </div>,
+  <div
+    className="container"
+    data-testid="modal"
+  />,
+]
+`;
+
+exports[`StartGameModal renders correctly 1`] = `
+[
+  <div
+    className="btn btn-warning"
+    data-testid="button"
+    onClick={[Function]}
+  >
+    Start Game
+  </div>,
+  <div
+    className="container"
+    data-testid="modal"
+  />,
+]
+`;
+
+exports[`StartGameModal renders the modal when the button is clicked 1`] = `
+[
+  <div
+    className="btn btn-warning"
+    data-testid="button"
+    onClick={[Function]}
+  >
+    Start Game
+  </div>,
+  <div
+    className="container"
+    data-testid="modal"
+  />,
+]
+`;
