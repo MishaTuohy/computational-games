@@ -1,7 +1,6 @@
 {
   "projects": {
     "default": "computational-thinking-5ad79",
-    "prod": "computational-thinking-5ad79",
     "development": "computational-thinking-a-65ba2"
   }
 }

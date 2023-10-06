@@ -71,7 +71,6 @@ jobs:
 
     - name: Deploy Functions
       run: |
-        firebase use default
         firebase deploy --only functions --token ${{ secrets.FIREBASE_TOKEN }}
 
   deploy-hosting:
@@ -96,6 +95,5 @@ jobs:
 
     - name: Deploy Hosting
       run: |
-        firebase use default
         firebase experiments:enable webframeworks
         firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
