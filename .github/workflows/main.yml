@@ -46,7 +46,7 @@ jobs:
       run: npm audit --audit-level=high
 
   deploy:
-    needs: [test-hosting]
+    needs: [build-test]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
