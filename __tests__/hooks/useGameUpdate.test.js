@@ -1,9 +1,9 @@
-import { render, waitFor } from '@testing-library/react';
+import useGameUpdate from '@/hooks/useGameUpdate';
 import useListenToDoc from '@/hooks/useListenToDoc';
-import useGameUpdate from '@/hooks/games/useGameUpdate';
+import { render, waitFor } from '@testing-library/react';
 
 jest.mock('firebase/auth', () => ({ getAuth: jest.fn(), }));
-jest.mock('@/hooks/services/firebase/useListenToDoc');
+jest.mock('@/hooks/useListenToDoc');
 
 function TestComponent({ gameID }) {
     const { gameSession, gameState } = useGameUpdate(gameID);

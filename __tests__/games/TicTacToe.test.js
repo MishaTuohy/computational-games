@@ -7,7 +7,7 @@ jest.mock('@/services/firebase/auth/AuthProvider', () => ({
     useAuth: jest.fn(),
 }));
 
-jest.mock('@/hooks/games/tictactoe/useBehaviour', () => ({
+jest.mock('@/games/ticTacToe/hooks/useBehaviour', () => ({
     useBehaviour: jest.fn(),
 }));
 

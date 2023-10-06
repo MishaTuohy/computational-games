@@ -7,7 +7,7 @@ jest.mock('@/services/firebase/auth/AuthProvider', () => ({
     useAuth: jest.fn(),
 }));
 
-jest.mock('@/hooks/games/coincollector/useBehaviour', () => jest.fn());
+jest.mock('@/games/coinCollector/hooks/useBehaviour', () => jest.fn());
 
 describe('CoinCollector', () => {
     const gameID = 'test-game-id';

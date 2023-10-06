@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, act } from '@testing-library/react';
-import { useUpdateWins } from '@/hooks/games/tictactoe/useUpdateWins';
+import { useUpdateWins } from '@/games/ticTacToe/hooks/useUpdateWins';
 
 function TestComponent({ gameState, user }) {
     const { wins } = useUpdateWins(gameState, user);
