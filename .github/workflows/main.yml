@@ -29,13 +29,6 @@ jobs:
         npm ci
         npm run build
 
-    - name: Build functions
-      run: |
-        cd functions
-        npm ci
-        npm run build
-        cd ..
-
     - name: Lint
       run: npm run lint:fix
       
